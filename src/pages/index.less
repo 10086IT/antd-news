@@ -1,0 +1,41 @@
+.pages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+
+  &-layout {
+    min-height: 100%;
+    &-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      box-shadow: 2px 0 8px 0 rgb(29 35 41 / 5%);
+      overflow: hidden;
+      z-index: 100;
+      &-fixed {
+        background: transparent !important;
+      }
+    }
+    &-sider {
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      height: 100%;
+      box-shadow: 2px 0 8px 0 rgb(29 35 41 / 5%);
+      overflow: hidden;
+      z-index: 100;
+      &-fixed {
+        background: transparent;
+        width: 208px;
+        overflow: hidden;
+        flex: 0 0 208px;
+        max-width: 208px;
+        min-width: 208px;
+        transition: background-color 0.3s ease 0s, min-width 0.3s ease 0s, max-width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+      }
+    }
+  }
+}
