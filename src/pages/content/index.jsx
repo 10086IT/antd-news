@@ -4,7 +4,7 @@ import {Layout} from "antd";
 const Content = () => {
     return (
         <Layout.Content>
-            children test refresh
+            test refresh
         </Layout.Content>
     );
 };
