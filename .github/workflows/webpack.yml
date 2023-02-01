@@ -21,7 +21,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        path: './bundle'
+        path: '.'
 
     - name: Build
       run: |
