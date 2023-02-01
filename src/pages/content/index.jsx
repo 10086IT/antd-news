@@ -3,7 +3,9 @@ import {Layout} from "antd";
 
 const Content = () => {
     return (
-        <Layout.Content>123</Layout.Content>
+        <Layout.Content>
+            children
+        </Layout.Content>
     );
 };
 
