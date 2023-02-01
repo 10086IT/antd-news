@@ -16,7 +16,7 @@ module.exports = {
     entry: ['./src/index.js'],
     output: {
         filename: "js/[name]-[contenthash:4].js",// 输出文件名
-        path: path.resolve(__dirname, './bundle'),// 输出路径
+        path: path.resolve(__dirname, './docs'),// 输出路径
         clean: true, // 清除上次输出目录
         chunkFilename: "js/[name]-chunk-[chunkhash:8].js",
         publicPath: isPrd ? './' : 'auto'
