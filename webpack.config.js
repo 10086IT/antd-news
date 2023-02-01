@@ -104,7 +104,7 @@ module.exports = {
             inject: 'body', // script位置
             scriptLoading: 'defer', // 异步加载js
         }),
-        isPrd && new BundleAnalyzerPlugin(),
+        // isPrd && new BundleAnalyzerPlugin(),
         isPrd && new MiniCssExtractPlugin({
             filename: 'css/[name].css',
             chunkFilename: 'css/chunk[name][hash:4].css'
