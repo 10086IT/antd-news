@@ -3,7 +3,7 @@ name: Deploy static content to Pages
 
 on:
   # Runs on pushes targeting the default branch
-  pull: ["master"]
+  pull_request: ["master"]
   push:
     branches: ["master"]
   # Allows you to run this workflow manually from the Actions tab
